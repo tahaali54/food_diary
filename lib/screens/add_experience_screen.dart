@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AddExperienceScreen extends StatefulWidget {
+  const AddExperienceScreen({super.key});
+
   @override
   _AddExperienceScreenState createState() => _AddExperienceScreenState();
 }
@@ -8,7 +10,7 @@ class AddExperienceScreen extends StatefulWidget {
 class _AddExperienceScreenState extends State<AddExperienceScreen> {
   final _formKey = GlobalKey<FormState>();
   double _rating = 4.0;
-  List<String> _images = [];
+  final List<String> _images = [];
   
   void _addImage() {
     // In a real app, this would open image picker
@@ -91,7 +93,7 @@ class _AddExperienceScreenState extends State<AddExperienceScreen> {
                 style: Theme.of(context).textTheme.headlineMedium,
               ),
               SizedBox(height: 10),
-              Container(
+              SizedBox(
                 height: 120,
                 child: Row(
                   children: [

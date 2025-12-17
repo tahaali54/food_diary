@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import '../widgets/experience_card.dart';
 
 class RecipeDetailScreen extends StatelessWidget {
+  const RecipeDetailScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -68,13 +70,13 @@ class RecipeDetailScreen extends StatelessWidget {
                         ),
                         ElevatedButton(
                           onPressed: () {},
-                          child: Text('Follow'),
                           style: ElevatedButton.styleFrom(
                             backgroundColor: Theme.of(context).highlightColor,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(20),
                             ),
                           ),
+                          child: Text('Follow'),
                         ),
                       ],
                     ),
@@ -260,7 +262,7 @@ class RecipeDetailScreen extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 4.0),
       child: Row(
         children: [
-          Container(
+          SizedBox(
             width: 80,
             child: Text(amount, style: TextStyle(fontWeight: FontWeight.bold)),
           ),

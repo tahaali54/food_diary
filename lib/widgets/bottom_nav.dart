@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class BottomNav extends StatelessWidget {
   final int currentIndex;
 
-  BottomNav({required this.currentIndex});
+  const BottomNav({super.key, required this.currentIndex});
 
   @override
   Widget build(BuildContext context) {

@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 
 class AddRecipeScreen extends StatefulWidget {
+  const AddRecipeScreen({super.key});
+
   @override
   _AddRecipeScreenState createState() => _AddRecipeScreenState();
 }
 
 class _AddRecipeScreenState extends State<AddRecipeScreen> {
   final _formKey = GlobalKey<FormState>();
-  List<Map<String, String>> _ingredients = [{'amount': '', 'name': ''}];
-  List<String> _steps = [''];
+  final List<Map<String, String>> _ingredients = [{'amount': '', 'name': ''}];
+  final List<String> _steps = [''];
   String _difficulty = 'Easy';
   
   void _addIngredient() {
@@ -242,7 +244,7 @@ class _AddRecipeScreenState extends State<AddRecipeScreen> {
                     ],
                   ),
                 );
-              }).toList(),
+              }),
               SizedBox(height: 20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -312,7 +314,7 @@ class _AddRecipeScreenState extends State<AddRecipeScreen> {
                     ],
                   ),
                 );
-              }).toList(),
+              }),
               SizedBox(height: 30),
             ],
           ),

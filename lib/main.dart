@@ -12,6 +12,8 @@ void main() {
 }
 
 class FoodDiaryApp extends StatelessWidget {
+  const FoodDiaryApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

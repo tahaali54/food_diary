@@ -8,7 +8,7 @@ class ExperienceCard extends StatelessWidget {
   final String userImageUrl;
   final String date;
 
-  ExperienceCard({
+  const ExperienceCard({super.key, 
     required this.username,
     required this.rating,
     required this.comment,
@@ -48,7 +48,7 @@ class ExperienceCard extends StatelessWidget {
             padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
             child: Text(comment),
           ),
-          Container(
+          SizedBox(
             height: 200,
             width: double.infinity,
             child: Image.network(

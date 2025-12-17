@@ -10,7 +10,7 @@ class RecipeCard extends StatelessWidget {
   final Function onTap;
   final bool isCompact;
 
-  RecipeCard({
+  const RecipeCard({super.key, 
     required this.title,
     required this.author,
     required this.imageUrl,

@@ -3,6 +3,8 @@ import '../widgets/recipe_card.dart';
 import '../widgets/bottom_nav.dart';
 
 class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
@@ -103,8 +105,8 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
         onPressed: () {
           Navigator.of(context).pushNamed('/add-recipe');
         },
-        child: Icon(Icons.add),
         tooltip: 'Add Recipe',
+        child: Icon(Icons.add),
       ),
       bottomNavigationBar: BottomNav(currentIndex: 0),
     );

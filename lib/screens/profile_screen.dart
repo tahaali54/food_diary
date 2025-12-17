@@ -3,6 +3,8 @@ import '../widgets/recipe_card.dart';
 import '../widgets/bottom_nav.dart';
 
 class ProfileScreen extends StatefulWidget {
+  const ProfileScreen({super.key});
+
   @override
   _ProfileScreenState createState() => _ProfileScreenState();
 }
@@ -111,7 +113,6 @@ class _ProfileScreenState extends State<ProfileScreen> with SingleTickerProvider
                     SizedBox(height: 10),
                     ElevatedButton(
                       onPressed: () {},
-                      child: Text('Edit Profile'),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Theme.of(context).primaryColor,
                         minimumSize: Size(double.infinity, 40),
@@ -119,6 +120,7 @@ class _ProfileScreenState extends State<ProfileScreen> with SingleTickerProvider
                           borderRadius: BorderRadius.circular(20),
                         ),
                       ),
+                      child: Text('Edit Profile'),
                     ),
                   ],
                 ),
@@ -207,7 +209,7 @@ class _ProfileScreenState extends State<ProfileScreen> with SingleTickerProvider
                         'These cookies turned out amazing! I added some walnuts for extra crunch.',
                       ),
                     ),
-                    Container(
+                    SizedBox(
                       height: 200,
                       width: double.infinity,
                       child: Image.network(
