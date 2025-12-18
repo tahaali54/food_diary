@@ -9,15 +9,16 @@ class ProfileScreen extends StatefulWidget {
   _ProfileScreenState createState() => _ProfileScreenState();
 }
 
-class _ProfileScreenState extends State<ProfileScreen> with SingleTickerProviderStateMixin {
+class _ProfileScreenState extends State<ProfileScreen>
+    with SingleTickerProviderStateMixin {
   late TabController _tabController;
-  
+
   @override
   void initState() {
     super.initState();
     _tabController = TabController(length: 3, vsync: this);
   }
-  
+
   @override
   void dispose() {
     _tabController.dispose();
@@ -57,10 +58,7 @@ class _ProfileScreenState extends State<ProfileScreen> with SingleTickerProvider
                 ),
               ),
               actions: [
-                IconButton(
-                  icon: Icon(Icons.settings),
-                  onPressed: () {},
-                ),
+                IconButton(icon: Icon(Icons.settings), onPressed: () {}),
               ],
             ),
             SliverToBoxAdapter(
@@ -72,7 +70,9 @@ class _ProfileScreenState extends State<ProfileScreen> with SingleTickerProvider
                       children: [
                         CircleAvatar(
                           radius: 40,
-                          backgroundImage: NetworkImage('https://loremflickr.com/200/200/portrait'),
+                          backgroundImage: NetworkImage(
+                            'https://loremflickr.com/200/200/portrait',
+                          ),
                         ),
                         SizedBox(width: 20),
                         Expanded(
@@ -88,9 +88,7 @@ class _ProfileScreenState extends State<ProfileScreen> with SingleTickerProvider
                               ),
                               Text(
                                 '@alexj',
-                                style: TextStyle(
-                                  color: Colors.grey,
-                                ),
+                                style: TextStyle(color: Colors.grey),
                               ),
                               SizedBox(height: 5),
                               Text(
@@ -120,7 +118,10 @@ class _ProfileScreenState extends State<ProfileScreen> with SingleTickerProvider
                           borderRadius: BorderRadius.circular(20),
                         ),
                       ),
-                      child: Text('Edit Profile'),
+                      child: Text(
+                        'Edit Profile',
+                        style: TextStyle(color: Colors.white),
+                      ),
                     ),
                   ],
                 ),
@@ -156,95 +157,99 @@ class _ProfileScreenState extends State<ProfileScreen> with SingleTickerProvider
                 mainAxisSpacing: 10,
               ),
               itemCount: 10,
-              itemBuilder: (ctx, i) => RecipeCard(
-                title: 'Homemade Pasta',
-                author: 'Alex Johnson',
-                imageUrl: 'https://loremflickr.com/400/300/pasta',
-                rating: 4.7,
-                cookTime: '45 min',
-                difficulty: 'Medium',
-                onTap: () {
-                  Navigator.of(context).pushNamed('/recipe-detail');
-                },
-                isCompact: true,
-              ),
+              itemBuilder:
+                  (ctx, i) => RecipeCard(
+                    title: 'Homemade Pasta',
+                    author: 'Alex Johnson',
+                    imageUrl: 'https://loremflickr.com/400/300/pasta',
+                    rating: 4.7,
+                    cookTime: '45 min',
+                    difficulty: 'Medium',
+                    onTap: () {
+                      Navigator.of(context).pushNamed('/recipe-detail');
+                    },
+                    isCompact: true,
+                  ),
             ),
-            
+
             // Experiences Tab
             ListView.builder(
               padding: EdgeInsets.all(10),
               itemCount: 5,
-              itemBuilder: (ctx, i) => Card(
-                margin: EdgeInsets.only(bottom: 15),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(15),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    ListTile(
-                      leading: CircleAvatar(
-                        backgroundImage: NetworkImage('https://loremflickr.com/200/200/portrait'),
-                      ),
-                      title: Text('Alex Johnson'),
-                      subtitle: Text('Tried Chocolate Chip Cookies'),
-                      trailing: Text('2d ago'),
+              itemBuilder:
+                  (ctx, i) => Card(
+                    margin: EdgeInsets.only(bottom: 15),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15),
                     ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                      child: Row(
-                        children: List.generate(
-                          5,
-                          (index) => Icon(
-                            index < 4 ? Icons.star : Icons.star_border,
-                            color: Theme.of(context).highlightColor,
-                            size: 20,
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        ListTile(
+                          leading: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                              'https://loremflickr.com/200/200/portrait',
+                            ),
+                          ),
+                          title: Text('Alex Johnson'),
+                          subtitle: Text('Tried Chocolate Chip Cookies'),
+                          trailing: Text('2d ago'),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                          child: Row(
+                            children: List.generate(
+                              5,
+                              (index) => Icon(
+                                index < 4 ? Icons.star : Icons.star_border,
+                                color: Theme.of(context).highlightColor,
+                                size: 20,
+                              ),
+                            ),
                           ),
                         ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(16.0),
-                      child: Text(
-                        'These cookies turned out amazing! I added some walnuts for extra crunch.',
-                      ),
-                    ),
-                    SizedBox(
-                      height: 200,
-                      width: double.infinity,
-                      child: Image.network(
-                        'https://loremflickr.com/800/600/food,cookies',
-                        fit: BoxFit.cover,
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
-                        children: [
-                          TextButton.icon(
-                            onPressed: () {},
-                            icon: Icon(Icons.favorite_border),
-                            label: Text('24'),
+                        Padding(
+                          padding: const EdgeInsets.all(16.0),
+                          child: Text(
+                            'These cookies turned out amazing! I added some walnuts for extra crunch.',
                           ),
-                          TextButton.icon(
-                            onPressed: () {},
-                            icon: Icon(Icons.comment_outlined),
-                            label: Text('5'),
+                        ),
+                        SizedBox(
+                          height: 200,
+                          width: double.infinity,
+                          child: Image.network(
+                            'https://loremflickr.com/800/600/food,cookies',
+                            fit: BoxFit.cover,
                           ),
-                          TextButton.icon(
-                            onPressed: () {},
-                            icon: Icon(Icons.share),
-                            label: Text('Share'),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                            children: [
+                              TextButton.icon(
+                                onPressed: () {},
+                                icon: Icon(Icons.favorite_border),
+                                label: Text('24'),
+                              ),
+                              TextButton.icon(
+                                onPressed: () {},
+                                icon: Icon(Icons.comment_outlined),
+                                label: Text('5'),
+                              ),
+                              TextButton.icon(
+                                onPressed: () {},
+                                icon: Icon(Icons.share),
+                                label: Text('Share'),
+                              ),
+                            ],
                           ),
-                        ],
-                      ),
+                        ),
+                      ],
                     ),
-                  ],
-                ),
-              ),
+                  ),
             ),
-            
+
             // Saved Tab
             GridView.builder(
               padding: EdgeInsets.all(10),
@@ -255,18 +260,19 @@ class _ProfileScreenState extends State<ProfileScreen> with SingleTickerProvider
                 mainAxisSpacing: 10,
               ),
               itemCount: 8,
-              itemBuilder: (ctx, i) => RecipeCard(
-                title: 'Beef Wellington',
-                author: 'Gordon Ramsay',
-                imageUrl: 'https://loremflickr.com/400/300/beef',
-                rating: 4.9,
-                cookTime: '120 min',
-                difficulty: 'Hard',
-                onTap: () {
-                  Navigator.of(context).pushNamed('/recipe-detail');
-                },
-                isCompact: true,
-              ),
+              itemBuilder:
+                  (ctx, i) => RecipeCard(
+                    title: 'Beef Wellington',
+                    author: 'Gordon Ramsay',
+                    imageUrl: 'https://loremflickr.com/400/300/beef',
+                    rating: 4.9,
+                    cookTime: '120 min',
+                    difficulty: 'Hard',
+                    onTap: () {
+                      Navigator.of(context).pushNamed('/recipe-detail');
+                    },
+                    isCompact: true,
+                  ),
             ),
           ],
         ),
@@ -280,17 +286,9 @@ class _ProfileScreenState extends State<ProfileScreen> with SingleTickerProvider
       children: [
         Text(
           count,
-          style: TextStyle(
-            fontSize: 22,
-            fontWeight: FontWeight.bold,
-          ),
+          style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
         ),
-        Text(
-          label,
-          style: TextStyle(
-            color: Colors.grey,
-          ),
-        ),
+        Text(label, style: TextStyle(color: Colors.grey)),
       ],
     );
   }
@@ -302,7 +300,11 @@ class _SliverAppBarDelegate extends SliverPersistentHeaderDelegate {
   _SliverAppBarDelegate(this.tabBar);
 
   @override
-  Widget build(BuildContext context, double shrinkOffset, bool overlapsContent) {
+  Widget build(
+    BuildContext context,
+    double shrinkOffset,
+    bool overlapsContent,
+  ) {
     return Container(
       color: Theme.of(context).scaffoldBackgroundColor,
       child: tabBar,
