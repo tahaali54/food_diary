@@ -33,7 +33,7 @@ class _AuthScreenState extends State<AuthScreen> {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: NetworkImage('https://source.unsplash.com/random/1080x1920/?food,cooking'),
+            image: NetworkImage('https://loremflickr.com/1080/1920/food,cooking'),
             fit: BoxFit.cover,
             colorFilter: ColorFilter.mode(
               Colors.black.withOpacity(0.5),

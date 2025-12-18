@@ -15,7 +15,7 @@ class _AddExperienceScreenState extends State<AddExperienceScreen> {
   void _addImage() {
     // In a real app, this would open image picker
     setState(() {
-      _images.add('https://source.unsplash.com/random/400x300/?food,cooking');
+      _images.add('https://loremflickr.com/400/300/food,cooking');
     });
   }
   

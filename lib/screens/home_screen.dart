@@ -56,7 +56,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
             itemBuilder: (ctx, i) => RecipeCard(
               title: 'Homemade Pasta with Tomato Sauce',
               author: 'Jamie Oliver',
-              imageUrl: 'https://source.unsplash.com/random/400x300/?pasta',
+              imageUrl: 'https://loremflickr.com/400/300/pasta',
               rating: 4.7,
               cookTime: '45 min',
               difficulty: 'Medium',
@@ -73,7 +73,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
             itemBuilder: (ctx, i) => RecipeCard(
               title: 'Chocolate Chip Cookies',
               author: 'Gordon Ramsay',
-              imageUrl: 'https://source.unsplash.com/random/400x300/?cookies',
+              imageUrl: 'https://loremflickr.com/400/300/cookies',
               rating: 4.9,
               cookTime: '30 min',
               difficulty: 'Easy',
@@ -90,7 +90,7 @@ class _HomeScreenState extends State<HomeScreen> with SingleTickerProviderStateM
             itemBuilder: (ctx, i) => RecipeCard(
               title: 'Beef Wellington',
               author: 'Julia Child',
-              imageUrl: 'https://source.unsplash.com/random/400x300/?beef',
+              imageUrl: 'https://loremflickr.com/400/300/beef',
               rating: 4.5,
               cookTime: '120 min',
               difficulty: 'Hard',

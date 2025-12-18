@@ -38,7 +38,7 @@ class _ProfileScreenState extends State<ProfileScreen> with SingleTickerProvider
                   fit: StackFit.expand,
                   children: [
                     Image.network(
-                      'https://source.unsplash.com/random/1080x400/?food,cooking',
+                      'https://loremflickr.com/1080/400/food,cooking',
                       fit: BoxFit.cover,
                     ),
                     Container(
@@ -72,7 +72,7 @@ class _ProfileScreenState extends State<ProfileScreen> with SingleTickerProvider
                       children: [
                         CircleAvatar(
                           radius: 40,
-                          backgroundImage: NetworkImage('https://source.unsplash.com/random/200x200/?portrait'),
+                          backgroundImage: NetworkImage('https://loremflickr.com/200/200/portrait'),
                         ),
                         SizedBox(width: 20),
                         Expanded(
@@ -159,7 +159,7 @@ class _ProfileScreenState extends State<ProfileScreen> with SingleTickerProvider
               itemBuilder: (ctx, i) => RecipeCard(
                 title: 'Homemade Pasta',
                 author: 'Alex Johnson',
-                imageUrl: 'https://source.unsplash.com/random/400x300/?pasta',
+                imageUrl: 'https://loremflickr.com/400/300/pasta',
                 rating: 4.7,
                 cookTime: '45 min',
                 difficulty: 'Medium',
@@ -184,7 +184,7 @@ class _ProfileScreenState extends State<ProfileScreen> with SingleTickerProvider
                   children: [
                     ListTile(
                       leading: CircleAvatar(
-                        backgroundImage: NetworkImage('https://source.unsplash.com/random/200x200/?portrait'),
+                        backgroundImage: NetworkImage('https://loremflickr.com/200/200/portrait'),
                       ),
                       title: Text('Alex Johnson'),
                       subtitle: Text('Tried Chocolate Chip Cookies'),
@@ -213,7 +213,7 @@ class _ProfileScreenState extends State<ProfileScreen> with SingleTickerProvider
                       height: 200,
                       width: double.infinity,
                       child: Image.network(
-                        'https://source.unsplash.com/random/800x600/?cookies',
+                        'https://loremflickr.com/800/600/food,cookies',
                         fit: BoxFit.cover,
                       ),
                     ),
@@ -258,7 +258,7 @@ class _ProfileScreenState extends State<ProfileScreen> with SingleTickerProvider
               itemBuilder: (ctx, i) => RecipeCard(
                 title: 'Beef Wellington',
                 author: 'Gordon Ramsay',
-                imageUrl: 'https://source.unsplash.com/random/400x300/?beef',
+                imageUrl: 'https://loremflickr.com/400/300/beef',
                 rating: 4.9,
                 cookTime: '120 min',
                 difficulty: 'Hard',

@@ -18,7 +18,7 @@ class RecipeDetailScreen extends StatelessWidget {
                 fit: StackFit.expand,
                 children: [
                   Image.network(
-                    'https://source.unsplash.com/random/800x600/?pasta',
+                    'https://loremflickr.com/800/600/pasta',
                     fit: BoxFit.cover,
                   ),
                   Container(
@@ -55,7 +55,7 @@ class RecipeDetailScreen extends StatelessWidget {
                           children: [
                             CircleAvatar(
                               backgroundImage: NetworkImage(
-                                'https://source.unsplash.com/random/100x100/?chef',
+                                'https://loremflickr.com/100/100/chef',
                               ),
                             ),
                             SizedBox(width: 10),
@@ -184,9 +184,9 @@ class RecipeDetailScreen extends StatelessWidget {
                       comment:
                           'This recipe was amazing! The pasta came out perfectly al dente and the sauce was so flavorful. Will definitely make again!',
                       imageUrl:
-                          'https://source.unsplash.com/random/400x300/?homemade,pasta',
+                          'https://loremflickr.com/400/300/homemade,pasta',
                       userImageUrl:
-                          'https://source.unsplash.com/random/100x100/?woman',
+                          'https://loremflickr.com/100/100/woman',
                       date: '2 days ago',
                     ),
                     ExperienceCard(
@@ -195,9 +195,9 @@ class RecipeDetailScreen extends StatelessWidget {
                       comment:
                           'Great recipe! I added some red pepper flakes for extra heat. The dough was a bit tricky to work with but the end result was worth it.',
                       imageUrl:
-                          'https://source.unsplash.com/random/400x300/?pasta,plate',
+                          'https://loremflickr.com/400/300/pasta,plate',
                       userImageUrl:
-                          'https://source.unsplash.com/random/100x100/?man',
+                          'https://loremflickr.com/100/100/man',
                       date: '1 week ago',
                     ),
                     SizedBox(height: 20),
