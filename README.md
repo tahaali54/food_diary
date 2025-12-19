@@ -6,6 +6,21 @@ A Flutter demo application showcasing the design capabilities of [v0.dev](https:
 
 This project was generated using v0.dev, an AI-powered design tool that can create beautiful, production-ready Flutter UI components and screens. The app serves as a demonstration of what's possible when prompting v0.dev to generate designs for a food diary application.
 
+## 📱 UI Showcase
+
+Here are some sample screens from the app:
+
+<table>
+<tr>
+<td width="50%" align="center">
+<img src="assets/IMG_7824-portrait.PNG" width="200" alt="UI Sample 1"/>
+</td>
+<td width="50%" align="center">
+<img src="assets/IMG_7823-portrait.PNG" width="200" alt="UI Sample 2"/>
+</td>
+</tr>
+</table>
+
 ## ✨ Features
 
 - **Recipe Discovery**: Browse recipes through three curated feeds:
@@ -31,16 +46,6 @@ This project was generated using v0.dev, an AI-powered design tool that can crea
   - Smooth navigation
   - Responsive layouts
   - Clean typography using Poppins font
-
-## 📱 UI Showcase
-
-Here are some sample screens from the app:
-
-<p align="center">
-  <img src="assets/IMG_7824-portrait.PNG" width="200" alt="UI Sample 1" />
-  &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="assets/IMG_7823-portrait.PNG" width="200" alt="UI Sample 2" />
-</p>
 
 ## 🏗️ Project Structure
 
