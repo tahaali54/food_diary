@@ -37,9 +37,9 @@ This project was generated using v0.dev, an AI-powered design tool that can crea
 Here are some sample screens from the app:
 
 <p align="center">
-  <img src="assets/IMG_7823.PNG" width="200" style="border: 10px solid #1a1a1a; border-radius: 25px; box-shadow: 0 8px 16px rgba(0,0,0,0.3);" alt="UI Sample 1" />
+  <img src="assets/IMG_7824-portrait.PNG" width="200" alt="UI Sample 1" />
   &nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="assets/IMG_7824.PNG" width="200" style="border: 10px solid #1a1a1a; border-radius: 25px; box-shadow: 0 8px 16px rgba(0,0,0,0.3);" alt="UI Sample 2" />
+  <img src="assets/IMG_7823-portrait.PNG" width="200" alt="UI Sample 2" />
 </p>
 
 ## 🏗️ Project Structure
